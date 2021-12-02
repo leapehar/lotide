@@ -47,13 +47,12 @@ const letterPositions = function (sentence) {
       } else {
         results[sentence[i]].push(i);
       }
-
     }
 
 
     return results;
   };
-  console.log(letterPositions('hello world'));
+  console.log(letterPositions('hello'));
   //test
 
   assertArraysEqual(letterPositions("hello").e, [1]);
