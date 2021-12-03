@@ -1,36 +1,24 @@
-
-
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
 
   for (let i = 0; i < arr1.length; i++) {
-
     if (arr1[i] !== arr2[i]) {
       return false;
     }
-
   }
   return true;
 }
 
-const assertArraysEqual = function (arr1, arr2) {
-
-
+const assertArraysEqual = function(arr1, arr2) {
   const result = eqArrays(arr1, arr2);
-  //console.log(result);
-
   if (result) {
     console.log('Assertion Passed');
     return;
   }
   console.log('Assertion Failed');
 }
-
-
-
-
 
 // Function Definition
 // Our map function will take in two arguments:
@@ -42,7 +30,7 @@ const assertArraysEqual = function (arr1, arr2) {
 
 const words = ["ground", "control", "to", "major", "tom"];
 
-const map = function (array, callback) {
+const map = function(array, callback) {
 
   const results = [];
 
@@ -57,15 +45,14 @@ const map = function (array, callback) {
 const results1 = map(words, word => word[0]);
 //console.log(results1);
 
-// const results2 = map(words, word => word.length);
-// console.log(results2);
+const results2 = map(words, word => word.length);
+console.log(results2);
 
-// const results3 = map(words, word => word.toUpperCase());
-// console.log(results3);
+const results3 = map(words, word => word.toUpperCase());
+console.log(results3);
 
 //Pass / Fail Assertion Test cases 
 
 assertArraysEqual(results1, ['g', 'c', 't', 'm', 't']);
-
 assertArraysEqual(results1, ['g', 'c', 't', 'm', 'c']);
 
