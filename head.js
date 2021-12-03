@@ -1,5 +1,3 @@
-
-
 let array = [];
 
 const head = function(arr) {
