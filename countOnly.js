@@ -1,6 +1,4 @@
-
-
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -9,23 +7,10 @@ const assertEqual = function (actual, expected) {
 };
 
 
-
-// TEST CODE
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-
-
-
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   const results = {};
-
-  // for (let i = 0; i < allItems.length; i++) {
-  //   if (typeof allItems[i] === 'string') {
-  //     console.log(allItems[i]);
-  //   }
-  // }
 
   for (const item of allItems) {
     if (itemsToCount[item]) {
