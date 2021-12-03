@@ -14,8 +14,6 @@ const eqArrays = function(arr1, arr2) {
 }
 
 const assertArraysEqual = function(arr1, arr2) {
-
-
   const result = eqArrays(arr1, arr2);
   console.log(result);
 
@@ -25,9 +23,6 @@ const assertArraysEqual = function(arr1, arr2) {
   }
   console.log('Assertion Failed');
 }
-
-
-
 
 const letterPositions = function(sentence) {
 
@@ -48,11 +43,10 @@ const letterPositions = function(sentence) {
         results[sentence[i]].push(i);
       }
     }
-
-
     return results;
-  };
-  console.log(letterPositions('hello'));
-  //test
+  }
+}
+console.log(letterPositions('hello'));
+test
 
-  //assertArraysEqual(letterPositions("hello").e, [1]);
+assertArraysEqual(letterPositions("hello").e, [1]);
