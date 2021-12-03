@@ -1,4 +1,4 @@
-const eqArrays = function (arr1, arr2) {
+const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -13,7 +13,7 @@ const eqArrays = function (arr1, arr2) {
   return true;
 }
 
-const assertArraysEqual = function (arr1, arr2) {
+const assertArraysEqual = function(arr1, arr2) {
 
 
   const result = eqArrays(arr1, arr2);
@@ -29,7 +29,7 @@ const assertArraysEqual = function (arr1, arr2) {
 
 
 
-const letterPositions = function (sentence) {
+const letterPositions = function(sentence) {
 
   const results = {};
 
@@ -55,4 +55,4 @@ const letterPositions = function (sentence) {
   console.log(letterPositions('hello'));
   //test
 
-  assertArraysEqual(letterPositions("hello").e, [1]);
+  //assertArraysEqual(letterPositions("hello").e, [1]);
