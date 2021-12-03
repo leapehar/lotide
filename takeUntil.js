@@ -12,9 +12,7 @@
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 
-
-
-const takeUntil = function (array, callback) {
+const takeUntil = function(array, callback) {
   let result = [];
   for (let item of array) {
     console.log(item);
@@ -25,7 +23,6 @@ const takeUntil = function (array, callback) {
   }
   return result;
 }
-
 
 const results1 = takeUntil(data1, x => x < 0);
 console.log(results1);
